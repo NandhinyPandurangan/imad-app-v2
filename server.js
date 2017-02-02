@@ -10,9 +10,9 @@ app.get('/', function (req, res) {
 });
 app.get('/articleone',function(req,res)
 {res.sendFile("article one is requested")});
-app.get('/articleone',function(req,res)
+app.get('/articletwo',function(req,res)
 {res.sendFile("article two is requested")});
-app.get('/articleone',function(req,res)
+app.get('/articlethree',function(req,res)
 {res.sendFile("article three is requested")});
 
 
