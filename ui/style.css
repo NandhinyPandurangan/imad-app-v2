@@ -20,3 +20,10 @@ body {
     height: 200px;
 }
 
+.container
+        {
+            max-width:1000px;
+            color:blue;
+            font-family:sensar-if;
+        }
+        
