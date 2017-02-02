@@ -12,9 +12,9 @@ app.get('/article-one',function(req,res)
 {res.sendFile(path.join(__dirname, 'ui', 'article1.html'));
 });
 app.get('/article-two',function(req,res)
-{res.sendFile(path.join(__dirname, 'ui', 'article1.html'));});
+{res.sendFile(path.join(__dirname, 'ui', 'article2.html'));});
 app.get('/article-three',function(req,res)
-{res.sendFile(path.join(__dirname, 'ui', 'article1.html'));});
+{res.sendFile(path.join(__dirname, 'ui', 'article3.html'));});
 
 
 
