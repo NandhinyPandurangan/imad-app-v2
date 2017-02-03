@@ -1,9 +1,9 @@
 var button=document.getElementById('counter')
 button.onclick=function()
 {
-    var request=new XMLHttpRequest;
+    var request=new XMLHttpRequest();
     request.onreadyStatechange=function(){
-        if(request.readyState=XMLHttpRequest.DONE)
+        if(request.readyState==XMLHttpRequest.DONE)
         {
             if(request.status==200)
             {
@@ -14,7 +14,7 @@ button.onclick=function()
         }
         request.open('GET','http://nandhinypandurangan.imad.hasura-app.io/counter',true);
         request(null);
-    }
+    };
     
     
 };
