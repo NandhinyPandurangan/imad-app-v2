@@ -13,7 +13,7 @@ button.onclick=function()
             }
         }
         request.open('GET','http://nandhinypandurangan.imad.hasura-app.io/counter',true);
-        request(null);
+        request.send(null);
     };
     
     
