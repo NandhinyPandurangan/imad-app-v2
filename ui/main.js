@@ -4,6 +4,6 @@ element.innerHTML='Nandhiny imad app';
 var img=document.getElementById('madi');
 img.onclick=function()
 {
-    img.stylemarginLeft='100px';
+    img.style.marginLeft='100px';
     
 }
