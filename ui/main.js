@@ -1,16 +1,20 @@
-console.log('Loaded!');
-var element=document.getElementById('main text');
-element.innerHTML='Nandhiny imad app';
-var img=document.getElementById('madi');
-var marginLeft=0;
-function moveRight()
+var button=document.getElementById('counter')
+button.onclick=function()
 {
-    marginLeft=marginLeft+2;
-    img.style.marginLeft=marginLeft+'px';
+    var request=new XMLHttpRequest;
+    request.onreadyStatechange=function(){
+        if(request.readyState=XMLHttpRequest.DONE)
+        {
+            if(request.status==200)
+            {
+                var counter=request.responseText;
+                var span=document.GetElementbyId('count');
+                span.innerHTML=counter.toString();
+            }
+        }
+        request.open('GET','http://nandhinypandurangan.imad.hasura-app.io/counter',true);
+        request(null);
+    }
     
-}
-img.onclick=function()
-{
-    var interval=setInterval(moveRight,40);
     
-}
+};
