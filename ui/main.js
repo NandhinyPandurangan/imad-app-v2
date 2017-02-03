@@ -14,8 +14,8 @@ button.onclick=function()
                 span.innerHTML=counter.toString();
         }
         }
+    };
         request.open('GET','http://nandhinypandurangan.imad.hasura-app.io/counter',true);
         request.send(null);
-    };
     
     };  
